@@ -17,6 +17,7 @@ main(int argc, char *argv[])
     printf(2,"Invalid priority (0-20)!\n");
     exit();
   }
+  printf(1, "pid=%d, pr=%d\n",pid,priority);
   chpr(pid, priority);
   exit();
 }
